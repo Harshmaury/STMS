@@ -1,0 +1,9 @@
+{
+  "eventId": "223e4567-e89b-12d3-a456-426614174001",
+  "occurredAt": "2025-09-14T10:05:00Z",
+  "enrollmentId": "enr-001",
+  "studentId": "stud-001",
+  "classId": "class-001",
+  "status": "confirmed",
+  "confirmedAt": "2025-09-14T10:05:10Z"
+}

@@ -1,0 +1,22 @@
+{
+  "$id": "https://example.com/schemas/events/UserCreated.v1.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UserCreated.v1",
+  "type": "object",
+  "required": ["eventId","occurredAt","userId","email"],
+  "additionalProperties": false,
+  "properties": {
+    "eventId": { "type": "string", "description": "UUID for the event" },
+    "occurredAt": { "type": "string", "format": "date-time", "description": "ISO8601 timestamp" },
+    "userId": { "type": "string", "description": "UUID of the user" },
+    "email": { "type": "string", "format": "email" },
+    "name": { "type": "string" },
+    "phone": { "type": ["string","null"] },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "source": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "eventId": "323e4567-e89b-12d3-a456-426614174002",
+  "occurredAt": "2025-09-14T10:10:00Z",
+  "attendanceId": "att-001",
+  "studentId": "stud-001",
+  "classId": "class-001",
+  "date": "2025-09-14",
+  "status": "present",
+  "markedBy": "teacher-001"
+}

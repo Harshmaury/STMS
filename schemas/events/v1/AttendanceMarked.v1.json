@@ -1,0 +1,21 @@
+{
+  "$id": "https://example.com/schemas/events/AttendanceMarked.v1.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AttendanceMarked.v1",
+  "type": "object",
+  "required": ["eventId","occurredAt","attendanceId","studentId","classId","date","status","markedBy"],
+  "additionalProperties": false,
+  "properties": {
+    "eventId": { "type": "string" },
+    "occurredAt": { "type": "string", "format": "date-time" },
+    "attendanceId": { "type": "string" },
+    "studentId": { "type": "string" },
+    "classId": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "status": { "type": "string", "enum": ["present","absent","excused","late"] },
+    "markedBy": { "type": "string" },
+    "notes": { "type": ["string","null"] },
+    "source": { "type": "string" },
+    "metadata": { "type": "object", "additionalProperties": true }
+  }
+}
